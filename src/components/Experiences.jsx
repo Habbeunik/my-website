@@ -1,5 +1,4 @@
 import { H3, Lead } from './Typography.jsx';
-import SectionContainer from './SectionContainer.jsx';
 import ExperienceItem from './ExperienceItem.jsx';
 
 export default function Experience() {

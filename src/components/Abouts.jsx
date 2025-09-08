@@ -1,11 +1,4 @@
-import {
-	H1,
-	P,
-	Small,
-	Muted,
-	H3,
-	Lead,
-} from './Typography.jsx';
+import { H1, Muted, Lead } from './Typography';
 
 const DeveloperIllustration = () => (
 	<svg

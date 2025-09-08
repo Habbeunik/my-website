@@ -1,4 +1,4 @@
-import { H3, Lead } from './Typography.jsx';
+import { H3 } from './Typography.jsx';
 import BlogItem from './BlogItem.jsx';
 
 export default function Blog() {
