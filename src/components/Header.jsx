@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Muted } from './Typography.jsx';
-import DarkModeToggle from './DarkModeToggle.jsx';
 
 export default function Header() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] =
@@ -59,8 +58,6 @@ export default function Header() {
 						))}
 					</div>
 
-					<DarkModeToggle />
-
 					<button
 						onClick={handleDownloadCV}
 						className="bg-transparent border border-border rounded-lg px-4 py-2 hover:bg-muted/30 transition-all duration-300 hover:border-muted-foreground/30 hover:-translate-y-0.5 hover-lift">
@@ -72,7 +69,6 @@ export default function Header() {
 
 				{/* Mobile Navigation */}
 				<div className="flex md:hidden items-center gap-4">
-					<DarkModeToggle />
 					<button
 						onClick={toggleMobileMenu}
 						className="p-2 rounded-lg border border-border hover:bg-muted/30 transition-all duration-300"

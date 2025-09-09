@@ -11,7 +11,7 @@ const badgeVariants = {
 	outline:
 		'text-foreground border border-input bg-background hover:bg-accent hover:text-accent-foreground',
 	muted:
-		'bg-muted text-muted-foreground hover:bg-muted/80 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700',
+		'border border-muted-foreground/20 text-muted-foreground hover:border-muted-foreground/40',
 	success:
 		'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
 	warning:

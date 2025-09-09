@@ -10,11 +10,69 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="My Portfolio" />
+		<meta
+			name="description"
+			content="Abbey Kumapayi - Senior Frontend Developer & Product Engineer with 7+ years experience building fast, accessible, and beautiful web experiences. Specializing in React, Next.js, TypeScript, and modern web technologies."
+		/>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<meta
+			name="keywords"
+			content="Abbey Kumapayi, Frontend Developer, React Developer, Next.js, TypeScript, Product Engineer, Web Developer, JavaScript, UI/UX, Portfolio, Software Engineer"
+		/>
+		<meta name="author" content="Abbey Kumapayi" />
+		<meta name="robots" content="index, follow" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="Abbey Kumapayi - Senior Frontend Developer & Product Engineer"
+		/>
+		<meta
+			property="og:description"
+			content="7+ years experience building fast, accessible, and beautiful web experiences. Specializing in React, Next.js, TypeScript, and modern web technologies."
+		/>
+		<meta
+			property="og:url"
+			content="https://abbeykumapayi.com"
+		/>
+		<meta
+			property="og:site_name"
+			content="Abbey Kumapayi Portfolio"
+		/>
+
+		<!-- Twitter -->
+		<meta
+			property="twitter:card"
+			content="summary_large_image"
+		/>
+		<meta
+			property="twitter:title"
+			content="Abbey Kumapayi - Senior Frontend Developer & Product Engineer"
+		/>
+		<meta
+			property="twitter:description"
+			content="7+ years experience building fast, accessible, and beautiful web experiences. Specializing in React, Next.js, TypeScript, and modern web technologies."
+		/>
+		<meta
+			property="twitter:creator"
+			content="@AbbeyKumap27186"
+		/>
+
+		<!-- Additional SEO -->
+		<meta name="theme-color" content="#1e293b" />
+		<meta
+			name="msapplication-TileColor"
+			content="#1e293b"
+		/>
+		<link
+			rel="canonical"
+			href="https://abbeykumapayi.com"
+		/>
+
 		<link
 			rel="icon"
 			type="image/svg+xml"
@@ -30,30 +88,44 @@ const { title } = Astro.props;
 		/>
 		<title>{title}</title>
 
-		<!-- Theme detection script to prevent flash -->
+		<!-- Set dark mode as default -->
 		<script is:inline>
-			(function () {
-				try {
-					const savedTheme = localStorage.getItem('theme');
-					const prefersDark = window.matchMedia(
-						'(prefers-color-scheme: dark)'
-					).matches;
+			document.documentElement.classList.add('dark');
+		</script>
 
-					if (
-						savedTheme === 'dark' ||
-						(!savedTheme && prefersDark)
-					) {
-						document.documentElement.classList.add('dark');
-					} else {
-						document.documentElement.classList.remove(
-							'dark'
-						);
-					}
-				} catch (error) {
-					// Default to light mode if there's an error
-					document.documentElement.classList.remove('dark');
+		<!-- Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Abbey Kumapayi",
+				"jobTitle": "Senior Frontend Developer & Product Engineer",
+				"description": "Senior Frontend Developer with 7+ years experience building fast, accessible, and beautiful web experiences. Specializing in React, Next.js, TypeScript, and modern web technologies.",
+				"url": "https://abbeykumapayi.com",
+				"sameAs": [
+					"https://github.com/Habbeunik",
+					"https://www.linkedin.com/in/abbey-kumapayi-45699b140/",
+					"https://x.com/AbbeyKumap27186"
+				],
+				"knowsAbout": [
+					"React",
+					"Next.js",
+					"TypeScript",
+					"JavaScript",
+					"Frontend Development",
+					"Web Development",
+					"UI/UX Design",
+					"Product Engineering"
+				],
+				"worksFor": {
+					"@type": "Organization",
+					"name": "React Squad"
+				},
+				"alumniOf": {
+					"@type": "Organization",
+					"name": "Various Technology Companies"
 				}
-			})();
+			}
 		</script>
 	</head>
 	<body class="text-foreground">
