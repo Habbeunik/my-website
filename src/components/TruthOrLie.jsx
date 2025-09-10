@@ -156,7 +156,6 @@ export default function TruthOrLie() {
 					</div>
 				</div>
 
-				{/* Social Links */}
 				<div>
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 						{socialLinks.map((link) => (

@@ -44,7 +44,6 @@ const Typography = React.forwardRef(
 
 Typography.displayName = 'Typography';
 
-// Specific typography components for convenience
 export const H1 = React.forwardRef(
 	({ className, ...props }, ref) => (
 		<Typography

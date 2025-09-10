@@ -11,7 +11,6 @@ export default function ExperienceItem({
 }) {
 	return (
 		<div className="animate-fade-in-up flex flex-col gap-4">
-			{/* Header */}
 			<div className="flex flex-col gap-4">
 				<H4 className="text-2xl font-bold text-foreground">
 					{title}

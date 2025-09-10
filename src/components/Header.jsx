@@ -14,7 +14,6 @@ export default function Header() {
 	};
 
 	const handleDownloadCV = () => {
-		// Create a temporary link to download CV
 		const link = document.createElement('a');
 		link.href = '/assets/cv/abbeykumapayi.pdf';
 		link.download = 'Abbey-Kumapayi-CV.pdf';
@@ -36,7 +35,6 @@ export default function Header() {
 		<>
 			<header className="flex justify-between items-center h-full px-4 md:px-12 animate-slide-in-top">
 				<div className="flex flex-col gap-2">
-					{/* Enhanced Logo/Brand */}
 					<div className="relative group">
 						<div className="text-2xl font-bold text-foreground hover-scale cursor-pointer">
 							AK
@@ -44,7 +42,6 @@ export default function Header() {
 					</div>
 				</div>
 
-				{/* Enhanced Desktop Navigation */}
 				<nav className="hidden md:flex items-center gap-8">
 					<div className="flex gap-8">
 						{navigationLinks.map((link) => (
@@ -70,7 +67,6 @@ export default function Header() {
 					</button>
 				</nav>
 
-				{/* Enhanced Mobile Navigation */}
 				<div className="flex md:hidden items-center gap-4">
 					<button
 						onClick={toggleMobileMenu}
@@ -92,7 +88,6 @@ export default function Header() {
 				</div>
 			</header>
 
-			{/* Enhanced Mobile Menu Overlay */}
 			{isMobileMenuOpen && (
 				<div
 					className="mobile-overlay open"
@@ -100,11 +95,9 @@ export default function Header() {
 				/>
 			)}
 
-			{/* Enhanced Mobile Menu */}
 			<div
 				className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
 				<div className="flex flex-col h-full bg-background">
-					{/* Enhanced Mobile Menu Header */}
 					<div className="flex justify-between items-center p-6 border-b border-border">
 						<div className="text-2xl font-bold text-foreground">
 							AK
@@ -128,7 +121,6 @@ export default function Header() {
 						</button>
 					</div>
 
-					{/* Enhanced Mobile Navigation Links */}
 					<nav className="flex-1 p-6">
 						<div className="flex flex-col gap-8">
 							{navigationLinks.map((link) => (
@@ -145,7 +137,6 @@ export default function Header() {
 						</div>
 					</nav>
 
-					{/* Enhanced Mobile CV Download */}
 					<div className="p-6 border-t border-border">
 						<button
 							onClick={() => {

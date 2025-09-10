@@ -9,11 +9,10 @@ export default function FunItem({
 	index = 0,
 	totalItems = 0,
 }) {
-	// Determine border classes based on position
-	const isFirstRow = index < 2; // First row (items 0 and 1)
+	const isFirstRow = index < 2;
 	const isLastRow =
-		index >= totalItems - (totalItems % 2 === 0 ? 2 : 1); // Last row items
-	const isFirstColumn = index % 2 === 0; // First column (even index: 0, 2, 4, etc.)
+		index >= totalItems - (totalItems % 2 === 0 ? 2 : 1);
+	const isFirstColumn = index % 2 === 0;
 
 	const borderClasses = [
 		isFirstRow ? 'border-t border-slate-700' : '',
@@ -51,7 +50,6 @@ export default function FunItem({
 				</svg>
 			</div>
 
-			{/* Description */}
 			<Muted
 				className="text-sm text-muted-foreground leading-relaxed mb-4 overflow-hidden"
 				style={{
@@ -62,7 +60,6 @@ export default function FunItem({
 				{description}
 			</Muted>
 
-			{/* Tags */}
 			{tags.length > 0 && (
 				<div className="flex flex-wrap gap-2">
 					{tags.slice(0, 4).map((tag, index) => (

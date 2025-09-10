@@ -1,20 +1,16 @@
 import { H1, Muted, Lead } from './Typography';
-import Socials from './Socials';
 
 export default function About() {
 	return (
 		<section
 			id="about"
 			className="w-full h-auto md:min-h-[70vh] flex items-center justify-center px-4 md:px-12 py-24 md:py-32 relative overflow-hidden">
-			{/* Background decorative elements - simplified */}
 			<div className="absolute inset-0 pointer-events-none">
-				{/* Keep only the mesh/grid effect */}
 				<div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
 			</div>
 
 			<div className="max-w-5xl mx-auto w-full text-center relative z-10">
 				<div className="flex flex-col gap-12">
-					{/* Hero Section */}
 					<div className="space-y-8">
 						<div className="relative">
 							<H1 className="text-6xl lg:text-7xl font-bold tracking-tight text-foreground">
@@ -22,7 +18,6 @@ export default function About() {
 							</H1>
 						</div>
 
-						{/* Role and Experience Badge */}
 						<div className="flex items-center justify-center gap-4 md:gap-6">
 							<div className="px-4 py-2 md:px-6 md:py-3 rounded-full border border-muted-foreground/20">
 								<Muted className="text-sm md:text-lg font-semibold text-foreground">
@@ -38,7 +33,6 @@ export default function About() {
 						</div>
 					</div>
 
-					{/* Main Description */}
 					<div className="space-y-6">
 						<Lead className="text-xl md:text-3xl leading-relaxed text-foreground max-w-4xl mx-auto font-light">
 							I build{' '}
@@ -97,7 +91,6 @@ export default function About() {
 						</div>
 					</div>
 
-					{/* Social Links */}
 					<div className="flex justify-center mt-12">
 						<div className="flex flex-row gap-6">
 							<a

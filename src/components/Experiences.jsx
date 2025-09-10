@@ -86,7 +86,6 @@ export default function Experience() {
 		<section
 			id="experience"
 			className="w-full h-full flex flex-col fade-in gap-16 px-4 md:px-12 py-16 md:py-24 relative">
-			{/* Enhanced Header Section */}
 			<div className="text-center max-w-4xl mx-auto relative z-10">
 				<div className="space-y-6">
 					<H3 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -100,7 +99,6 @@ export default function Experience() {
 				</div>
 			</div>
 
-			{/* Enhanced Experience List */}
 			<div className="max-w-5xl mx-auto w-full relative z-10">
 				<div className="flex flex-col gap-16">
 					{experiences.map((exp, index) => (

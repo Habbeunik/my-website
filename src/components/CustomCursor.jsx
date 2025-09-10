@@ -14,7 +14,6 @@ export default function CustomCursor() {
 		let animationFrameId;
 
 		const updateMousePosition = (e) => {
-			// Use requestAnimationFrame for smoother performance
 			animationFrameId = requestAnimationFrame(() => {
 				setMousePosition({ x: e.clientX, y: e.clientY });
 			});
@@ -23,13 +22,11 @@ export default function CustomCursor() {
 		const handleMouseEnter = () => setIsHovering(true);
 		const handleMouseLeave = () => setIsHovering(false);
 
-		// Add event listeners
 		window.addEventListener(
 			'mousemove',
 			updateMousePosition
 		);
 
-		// Add hover listeners to interactive elements
 		const interactiveElements = document.querySelectorAll(
 			'a, button, [role="button"]'
 		);
@@ -38,7 +35,6 @@ export default function CustomCursor() {
 			el.addEventListener('mouseleave', handleMouseLeave);
 		});
 
-		// Cleanup
 		return () => {
 			window.removeEventListener(
 				'mousemove',
@@ -62,7 +58,6 @@ export default function CustomCursor() {
 
 	return (
 		<>
-			{/* Main cursor - fastest response */}
 			<div
 				ref={cursorRef}
 				className="fixed pointer-events-none z-50 will-change-transform"
@@ -81,7 +76,6 @@ export default function CustomCursor() {
 				/>
 			</div>
 
-			{/* Cursor trail - slightly delayed for smooth effect */}
 			<div
 				ref={trailRef}
 				className="fixed pointer-events-none z-40 will-change-transform"
@@ -100,7 +94,6 @@ export default function CustomCursor() {
 				/>
 			</div>
 
-			{/* Outer ring - slowest for depth effect */}
 			<div
 				ref={ringRef}
 				className="fixed pointer-events-none z-30 will-change-transform"
@@ -119,7 +112,6 @@ export default function CustomCursor() {
 				/>
 			</div>
 
-			{/* Subtle background glow */}
 			<div
 				className="fixed pointer-events-none z-10 will-change-transform"
 				style={{

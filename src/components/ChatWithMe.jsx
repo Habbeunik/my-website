@@ -1,11 +1,4 @@
-import {
-	H3,
-	H4,
-	P,
-	Small,
-	Muted,
-	Lead,
-} from './Typography.jsx';
+import { H3, Lead } from './Typography.jsx';
 import {
 	Card,
 	CardHeader,
@@ -77,7 +70,6 @@ export default function ChatWithMe() {
 		<section
 			id="chat-with-me"
 			className="w-full h-full flex flex-col fade-in gap-8 md:gap-12 px-4 md:px-12 py-10 md:py-20">
-			{/* Header Section */}
 			<div className="text-center max-w-3xl mx-auto">
 				<H3 className="text-2xl md:text-4xl font-bold mb-4">
 					Let's Work Together
@@ -89,7 +81,6 @@ export default function ChatWithMe() {
 				</Lead>
 			</div>
 
-			{/* Services Grid */}
 			<div className="max-w-6xl mx-auto w-full">
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
 					<Card className="text-center hover:bg-transparent hover:translate-y-0">

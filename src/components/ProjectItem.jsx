@@ -16,11 +16,7 @@ export default function ProjectItem({
 	technologies = [],
 	githubUrl,
 	liveUrl,
-	status = 'completed',
-	index = 0,
-	totalItems = 0,
 }) {
-	// Use liveUrl as primary link, fallback to githubUrl
 	const projectUrl = liveUrl || githubUrl;
 
 	return (
