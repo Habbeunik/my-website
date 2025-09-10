@@ -10,9 +10,9 @@ export default function ExperienceItem({
 	tools = [],
 }) {
 	return (
-		<div className="animate-fade-in-up">
+		<div className="animate-fade-in-up flex flex-col gap-4">
 			{/* Header */}
-			<div className="flex flex-col gap-4 mb-6">
+			<div className="flex flex-col gap-4">
 				<H4 className="text-2xl font-bold text-foreground">
 					{title}
 				</H4>
@@ -31,12 +31,10 @@ export default function ExperienceItem({
 				</div>
 			</div>
 
-			{/* Description */}
-			<Muted className="text-lg leading-8 mb-8">
+			<Muted className="text-lg leading-8">
 				{description}
 			</Muted>
 
-			{/* Tools */}
 			{tools.length > 0 && (
 				<div className="flex flex-wrap gap-3">
 					{tools.map((tool, index) => (
