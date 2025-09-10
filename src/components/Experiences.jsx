@@ -85,17 +85,24 @@ export default function Experience() {
 	return (
 		<section
 			id="experience"
-			className="w-full h-full flex flex-col fade-in gap-12  px-4 md:px-12 py-10 md:py-20">
-			{/* Header Section */}
-			<div className="text-center max-w-3xl mx-auto">
-				<H3 className="text-2xl md:text-4xl font-bold mb-4">
-					Professional Experience
-				</H3>
+			className="w-full h-full flex flex-col fade-in gap-16 px-4 md:px-12 py-16 md:py-24 relative">
+			{/* Enhanced Header Section */}
+			<div className="text-center max-w-4xl mx-auto relative z-10">
+				<div className="space-y-6">
+					<H3 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+						Professional Experience
+					</H3>
+					<Lead className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+						Building impactful solutions across diverse
+						industries with a focus on modern web
+						technologies and user experience.
+					</Lead>
+				</div>
 			</div>
 
-			{/* Experience List */}
-			<div className="max-w-4xl mx-auto w-full">
-				<div className="flex flex-col gap-12">
+			{/* Enhanced Experience List */}
+			<div className="max-w-5xl mx-auto w-full relative z-10">
+				<div className="flex flex-col gap-16">
 					{experiences.map((exp, index) => (
 						<ExperienceItem
 							key={index}

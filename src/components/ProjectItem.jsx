@@ -44,7 +44,7 @@ export default function ProjectItem({
 						{technologies.slice(0, 4).map((tech, index) => (
 							<Badge
 								key={index}
-								variant="muted"
+								variant="tech"
 								size="sm"
 								className="font-medium">
 								{tech}

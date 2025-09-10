@@ -10,35 +10,41 @@ export default function ExperienceItem({
 	tools = [],
 }) {
 	return (
-		<div className="flex flex-col gap-y-2 animate-fade-in-up">
-			<H4 className="text-lg font-semibold hover-scale cursor-default">
-				{title}
-			</H4>
-			<div>
-				<P className="flex flex-wrap items-center gap-2 text-base mt-0">
-					<span className="font-medium">{company}</span>
-					<span>•</span>
-					<span className="text-muted-foreground">
+		<div className="animate-fade-in-up">
+			{/* Header */}
+			<div className="flex flex-col gap-4 mb-6">
+				<H4 className="text-2xl font-bold text-foreground">
+					{title}
+				</H4>
+				<div className="flex flex-wrap items-center gap-3">
+					<span className="text-lg font-semibold text-foreground">
+						{company}
+					</span>
+					<div className="w-1 h-1 bg-muted-foreground rounded-full"></div>
+					<span className="text-muted-foreground font-medium">
 						{location}
 					</span>
-					<span>•</span>
-					<span className="text-muted-foreground">
+					<div className="w-1 h-1 bg-muted-foreground rounded-full"></div>
+					<span className="text-muted-foreground font-medium">
 						{period}
 					</span>
-				</P>
+				</div>
 			</div>
-			<Muted className="text-base leading-8">
+
+			{/* Description */}
+			<Muted className="text-lg leading-8 mb-8">
 				{description}
 			</Muted>
 
+			{/* Tools */}
 			{tools.length > 0 && (
-				<div className="flex flex-wrap gap-2 mt-3">
+				<div className="flex flex-wrap gap-3">
 					{tools.map((tool, index) => (
 						<Badge
 							key={index}
-							variant="muted"
+							variant="tech"
 							size="sm"
-							className="font-medium hover-scale">
+							className="font-medium">
 							{tool}
 						</Badge>
 					))}

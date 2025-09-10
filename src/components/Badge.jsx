@@ -3,20 +3,21 @@ import { cn } from '../lib/utils';
 
 const badgeVariants = {
 	default:
-		'bg-primary text-primary-foreground hover:bg-primary/80',
+		'bg-gradient-to-r from-emerald-500 to-emerald-600 text-white hover:from-emerald-600 hover:to-emerald-700 shadow-lg',
 	secondary:
-		'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+		'bg-gradient-to-r from-purple-500 to-purple-600 text-white hover:from-purple-600 hover:to-purple-700 shadow-lg',
 	destructive:
-		'bg-destructive text-destructive-foreground hover:bg-destructive/80',
+		'bg-gradient-to-r from-red-500 to-red-600 text-white hover:from-red-600 hover:to-red-700 shadow-lg',
 	outline:
-		'text-foreground border border-input bg-background hover:bg-accent hover:text-accent-foreground',
+		'text-foreground border border-muted-foreground/30 bg-transparent hover:bg-muted/20 hover:border-muted-foreground/50',
 	muted:
-		'border border-muted-foreground/20 text-muted-foreground hover:border-muted-foreground/40',
+		'border border-muted-foreground/20 text-muted-foreground bg-muted/10 hover:border-muted-foreground/40 hover:bg-muted/20',
 	success:
-		'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
+		'bg-gradient-to-r from-emerald-500 to-emerald-600 text-white shadow-lg',
 	warning:
-		'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
-	info: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
+		'bg-gradient-to-r from-yellow-500 to-orange-500 text-white shadow-lg',
+	info: 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg',
+	tech: 'border border-emerald-500/30 text-emerald-400 bg-emerald-500/10 hover:bg-emerald-500/20 hover:border-emerald-400/50',
 };
 
 const badgeSizes = {
@@ -40,7 +41,7 @@ const Badge = React.forwardRef(
 			<span
 				ref={ref}
 				className={cn(
-					'inline-flex items-center rounded-full border font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
+					'inline-flex items-center rounded-full border font-semibold transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
 					badgeVariants[variant],
 					badgeSizes[size],
 					className

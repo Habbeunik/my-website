@@ -13,7 +13,7 @@ const Card = React.forwardRef(
 				<React.Fragment>
 					{React.cloneElement(children, {
 						className: cn(
-							'group block bg-transparent border border-border rounded-xl p-6 hover:bg-muted/30 transition-all duration-300 hover:shadow-xl hover:shadow-black/20 hover:border-muted-foreground/30 hover:-translate-y-1 h-full hover-lift',
+							'group block border border-muted-foreground/20 rounded-2xl p-8 hover:bg-muted/10 transition-all duration-300 hover:border-muted-foreground/40 hover:-translate-y-1 h-full relative overflow-hidden',
 							className
 						),
 						ref,
@@ -27,7 +27,7 @@ const Card = React.forwardRef(
 			<Comp
 				ref={ref}
 				className={cn(
-					'group block bg-transparent border border-border rounded-xl p-6 hover:bg-muted/30 transition-all duration-300 hover:shadow-xl hover:shadow-black/20 hover:border-muted-foreground/30 hover:-translate-y-1 h-full hover-lift',
+					'group block border border-muted-foreground/20 rounded-2xl p-8 hover:bg-muted/10 transition-all duration-300 hover:border-muted-foreground/40 hover:-translate-y-1 h-full relative overflow-hidden',
 					className
 				)}
 				{...props}>
@@ -55,7 +55,7 @@ const CardTitle = React.forwardRef(
 		<h4
 			ref={ref}
 			className={cn(
-				'text-lg font-semibold text-foreground mb-3 group-hover:text-foreground transition-colors duration-300 pr-8',
+				'text-xl font-bold text-foreground mb-4 pr-12',
 				className
 			)}
 			{...props}>
@@ -70,7 +70,7 @@ const CardIcon = React.forwardRef(
 		<svg
 			ref={ref}
 			className={cn(
-				'w-4 h-4 text-muted-foreground group-hover:text-foreground group-hover:scale-110 transition-all duration-300',
+				'w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors duration-300',
 				'absolute top-0 right-0 z-10',
 				className
 			)}
@@ -111,12 +111,12 @@ const CardDescription = React.forwardRef(
 		<p
 			ref={ref}
 			className={cn(
-				'text-sm text-muted-foreground group-hover:text-foreground/80 leading-relaxed mb-4 overflow-hidden transition-colors duration-300',
+				'text-base text-muted-foreground group-hover:text-foreground/90 leading-relaxed mb-6 overflow-hidden transition-colors duration-300',
 				className
 			)}
 			style={{
 				display: '-webkit-box',
-				WebkitLineClamp: 3,
+				WebkitLineClamp: 4,
 				WebkitBoxOrient: 'vertical',
 			}}
 			{...props}>

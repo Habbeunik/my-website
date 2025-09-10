@@ -88,22 +88,24 @@ export default function Projects() {
 	return (
 		<section
 			id="projects"
-			className="w-full h-full flex flex-col fade-in gap-8 md:gap-12 px-4 md:px-12 py-10 md:py-20">
-			{/* Header Section */}
-			<div className="text-center max-w-3xl mx-auto">
-				<H3 className="text-2xl md:text-4xl font-bold mb-4">
-					Featured Projects
-				</H3>
-				{/* <Lead className="text-xl text-muted-foreground">
-					A collection of projects showcasing my expertise
-					in full-stack development, from data engineering
-					tools to consumer applications.
-				</Lead> */}
+			className="w-full h-full flex flex-col fade-in gap-12 md:gap-16 px-4 md:px-12 py-16 md:py-24 relative">
+			{/* Enhanced Header Section */}
+			<div className="text-center max-w-4xl mx-auto relative z-10">
+				<div className="space-y-6">
+					<H3 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+						Featured Projects
+					</H3>
+					<Lead className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+						A collection of projects showcasing my expertise
+						in full-stack development, from data engineering
+						tools to consumer applications.
+					</Lead>
+				</div>
 			</div>
 
-			{/* Projects Grid */}
-			<div className="max-w-6xl mx-auto w-full">
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			{/* Enhanced Projects Grid */}
+			<div className="max-w-7xl mx-auto w-full relative z-10">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
 					{projects.map((project, index) => (
 						<ProjectItem
 							key={index}
