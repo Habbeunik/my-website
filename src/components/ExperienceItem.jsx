@@ -12,7 +12,7 @@ export default function ExperienceItem({
 	return (
 		<div className="animate-fade-in-up flex flex-col gap-4">
 			<div className="flex flex-col gap-4">
-				<H4 className="text-2xl font-bold text-foreground">
+				<H4 className="text-xl md:text-2xl font-bold text-foreground">
 					{title}
 				</H4>
 				<div className="flex flex-wrap items-center gap-3">

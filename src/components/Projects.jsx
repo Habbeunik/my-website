@@ -1,8 +1,23 @@
-import { H3, Lead } from './Typography.jsx';
+import { H3 } from './Typography.jsx';
 import ProjectItem from './ProjectItem.jsx';
 
 export default function Projects() {
 	const projects = [
+		{
+			title: 'Datangle',
+			description:
+				'DataOps platform that simplifies data operations by automating data processes, promoting pipelines, and building no-code CI/CD workflows. Features include data integration, version control, real-time collaboration, and automated environment management for modern data teams.',
+			technologies: [
+				'React',
+				'TypeScript',
+				'Node.js',
+				'DataOps',
+				'CI/CD',
+			],
+			githubUrl: '',
+			liveUrl: 'https://datangle.io/',
+			status: 'completed',
+		},
 		{
 			title: 'UX Test Tools',
 			description:
@@ -91,14 +106,9 @@ export default function Projects() {
 			className="w-full h-full flex flex-col fade-in gap-12 md:gap-16 px-4 md:px-12 py-16 md:py-24 relative">
 			<div className="text-center max-w-4xl mx-auto relative z-10">
 				<div className="space-y-6">
-					<H3 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+					<H3 className="text-2xl md:text-4xl font-bold mb-4">
 						Featured Projects
 					</H3>
-					<Lead className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-						A collection of projects showcasing my expertise
-						in full-stack development, from data engineering
-						tools to consumer applications.
-					</Lead>
 				</div>
 			</div>
 

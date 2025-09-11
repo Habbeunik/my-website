@@ -48,8 +48,8 @@ export default function Header() {
 							<a
 								key={link.href}
 								href={link.href}
-								className="nav-link relative text-lg hover:text-foreground active:text-foreground transition-all duration-300 cursor-pointer group">
-								<Muted className="text-muted-foreground group-hover:text-foreground group-active:text-foreground active:text-foreground transition-colors duration-300 font-medium">
+								className="nav-link relative hover:text-foreground active:text-foreground transition-all duration-300 cursor-pointer group">
+								<Muted className="text-muted-foreground text-base group-hover:text-foreground group-active:text-foreground active:text-foreground transition-colors duration-300 font-medium">
 									{link.label}
 								</Muted>
 								<div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-foreground rounded-full opacity-0 group-hover:opacity-100 group-active:opacity-100 active:opacity-100 transition-opacity duration-300 transform scale-x-0 group-hover:scale-x-100"></div>

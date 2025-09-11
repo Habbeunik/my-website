@@ -1,4 +1,4 @@
-import { H3, Lead } from './Typography.jsx';
+import { H3 } from './Typography.jsx';
 import ExperienceItem from './ExperienceItem.jsx';
 
 export default function Experience() {
@@ -88,14 +88,9 @@ export default function Experience() {
 			className="w-full h-full flex flex-col fade-in gap-16 px-4 md:px-12 py-16 md:py-24 relative">
 			<div className="text-center max-w-4xl mx-auto relative z-10">
 				<div className="space-y-6">
-					<H3 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+					<H3 className="text-2xl md:text-4xl font-bold mb-4">
 						Professional Experience
 					</H3>
-					<Lead className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-						Building impactful solutions across diverse
-						industries with a focus on modern web
-						technologies and user experience.
-					</Lead>
 				</div>
 			</div>
 
