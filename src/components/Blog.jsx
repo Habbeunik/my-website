@@ -6,7 +6,7 @@ export default function Blog() {
 		{
 			title: 'The Value Beyond Syntax',
 			description:
-				'Exploring the deeper meaning and value that lies beyond just knowing programming syntax. This article delves into the importance of problem-solving skills, critical thinking, and the ability to create meaningful solutions that go far beyond mere code implementation.',
+				'Exploring what makes great engineers more than coders — a look at the thinking, creativity, and empathy behind building meaningful software that solves real problems.',
 			tags: [
 				'Programming Philosophy',
 				'Problem Solving',
@@ -20,7 +20,7 @@ export default function Blog() {
 		{
 			title: 'Writing a Custom REST API Hook',
 			description:
-				'Learn how to create reusable custom hooks for REST API interactions in React applications. This comprehensive guide covers error handling, loading states, caching strategies, and best practices for building maintainable API integration patterns.',
+				'A practical guide to building reusable API hooks in React. Covers patterns for error handling, loading states, and caching that make API integration cleaner and more maintainable.',
 			tags: [
 				'React',
 				'Custom Hooks',
@@ -35,7 +35,7 @@ export default function Blog() {
 			title:
 				'Can AI Learn Like Humans? Exploring World Models in Artificial Intelligence',
 			description:
-				'Dive deep into the fascinating world of AI learning mechanisms and how they compare to human cognition. Explore world models, neural networks, and the future of artificial intelligence as we examine whether machines can truly learn like humans.',
+				'Examining how AI systems build understanding through world models — and what this means for the future of intelligent systems and human-AI collaboration.',
 			tags: [
 				'Artificial Intelligence',
 				'Machine Learning',
@@ -50,7 +50,7 @@ export default function Blog() {
 			title:
 				'Building Modern Web Applications with React and TypeScript',
 			description:
-				'A comprehensive guide to building scalable web applications using React and TypeScript. Learn about component architecture, type safety, state management, and best practices for creating maintainable and performant applications.',
+				'Architecture patterns and practices for building scalable web applications. How to structure components, manage state, and maintain type safety as products grow.',
 			tags: [
 				'React',
 				'TypeScript',

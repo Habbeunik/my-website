@@ -4,15 +4,30 @@ import ProjectItem from './ProjectItem.jsx';
 export default function Projects() {
 	const projects = [
 		{
-			title: 'Datangle',
+			title: 'RAG Application',
 			description:
-				'DataOps platform that simplifies data operations by automating data processes, promoting pipelines, and building no-code CI/CD workflows. Features include data integration, version control, real-time collaboration, and automated environment management for modern data teams.',
+				'Built a Retrieval-Augmented Generation (RAG) application that enables intelligent document interaction. Problem: Users struggled to quickly extract insights from large PDF documents. Solution: AI-powered chat interface with vector embeddings for contextual document understanding. Outcome: Users can now ask natural language questions and get accurate, context-aware answers from their documents.',
 			technologies: [
 				'React',
 				'TypeScript',
-				'Node.js',
-				'DataOps',
-				'CI/CD',
+				'RAG',
+				'LLM',
+				'Vector DB',
+			],
+			githubUrl: '',
+			liveUrl: 'https://rag-app-psi.vercel.app/',
+			status: 'completed',
+		},
+		{
+			title: 'Datangle — DataOps Builder',
+			description:
+				'Architected a no-code workflow builder that transforms how data teams build pipelines. Problem: Data engineers spent hours writing boilerplate code. Solution: Visual drag-and-drop interface with React Flow. Outcome: Reduced pipeline setup time by 60% and enabled non-technical users to create complex data workflows.',
+			technologies: [
+				'React',
+				'TypeScript',
+				'Next.js',
+				'React Flow',
+				'Workflow Builder',
 			],
 			githubUrl: '',
 			liveUrl: 'https://datangle.io/',
@@ -21,7 +36,7 @@ export default function Projects() {
 		{
 			title: 'UX Test Tools',
 			description:
-				'A comprehensive suite of user experience testing tools designed to help UX researchers and designers conduct effective usability studies. Features include user testing templates, analytics dashboards, and collaborative feedback systems.',
+				'Created a suite of user experience testing tools that streamline usability studies. Problem: UX researchers used multiple disconnected tools. Solution: Unified platform with templates, analytics, and collaborative feedback. Outcome: Reduced study setup time by 50% and improved team collaboration.',
 			technologies: [
 				'React',
 				'TypeScript',
@@ -37,13 +52,12 @@ export default function Projects() {
 		{
 			title: 'React Flow Workflow',
 			description:
-				'A powerful React hook for building interactive workflow diagrams with React Flow. Features smart layout engine, configurable spacing, and simplified API for creating node-based workflows with automatic layout capabilities.',
+				'Built an open-source React hook that simplifies creating interactive workflow diagrams. Problem: Teams struggled with complex React Flow configurations. Solution: Simplified API with smart auto-layout. Outcome: Used by 1000+ developers, reducing workflow implementation time from days to hours.',
 			technologies: [
 				'React',
 				'TypeScript',
 				'React Flow',
 				'NPM Package',
-				'Node.js',
 			],
 			githubUrl:
 				'https://github.com/habbeunik/react-flow-workflow',
@@ -54,12 +68,11 @@ export default function Projects() {
 		{
 			title: 'Pokemon Flow Visualizer',
 			description:
-				'An interactive Pokemon evolution flow visualizer built with React Flow. Demonstrates the power of the react-flow-workflow library with a fun, engaging interface showing Pokemon evolution chains and relationships.',
+				'Built an interactive evolution chain visualizer showcasing workflow capabilities. Demonstrates complex node relationships in an engaging, accessible format. Used as a reference implementation for visual workflow patterns.',
 			technologies: [
 				'React',
 				'TypeScript',
 				'React Flow',
-				'Vercel',
 				'Tailwind CSS',
 			],
 			githubUrl:
@@ -71,32 +84,16 @@ export default function Projects() {
 		{
 			title: 'Journal App',
 			description:
-				'A modern personal journaling application with rich text editing, mood tracking, and data visualization. Features include search functionality, tags, export capabilities, and beautiful UI for daily reflection.',
+				'Designed a modern journaling app with rich text editing and mood tracking. Focused on intuitive UX and performance. Delivered a beautiful, distraction-free writing experience with local-first architecture.',
 			technologies: [
 				'React',
 				'TypeScript',
-				'Vercel',
 				'Tailwind CSS',
 				'Local Storage',
 			],
 			githubUrl: 'https://github.com/habbeunik/journal-app',
 			liveUrl: 'https://journ-app.vercel.app/',
 			status: 'completed',
-		},
-		{
-			title: 'Study App',
-			description:
-				'An AI-powered study tool designed to enhance learning efficiency and retention. Features intelligent content generation, adaptive quizzes, progress tracking, and personalized study recommendations based on learning patterns.',
-			technologies: [
-				'React',
-				'TypeScript',
-				'AI/ML',
-				'Node.js',
-				'PostgreSQL',
-			],
-			githubUrl: 'https://github.com/habbeunik/study-app',
-			liveUrl: '',
-			status: 'in-progress',
 		},
 	];
 

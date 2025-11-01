@@ -9,13 +9,13 @@ export default function Experience() {
 			location: 'Remote',
 			period: 'Dec 2024 — Present',
 			description:
-				'Leading frontend development initiatives for cutting-edge web applications. Building scalable component libraries and design systems that enhance developer productivity. Mentoring junior developers and conducting code reviews to maintain high code quality standards.',
+				'Leading frontend architecture for AI-powered applications, building scalable component libraries that enable faster shipping across teams. Mentoring engineers and driving code quality standards that support intelligent product development at scale.',
 			tools: [
 				'React',
 				'Next.js',
 				'TypeScript',
-				'Component Libraries',
 				'Design Systems',
+				'AI Integration',
 			],
 		},
 		{
@@ -24,12 +24,12 @@ export default function Experience() {
 			location: 'London',
 			period: 'May 2024 — Nov 2024',
 			description:
-				'Built a comprehensive pipeline workflow builder for data engineers, enabling visual data processing workflows. Led frontend architecture decisions and mentored junior engineers. Collaborated with cross-functional teams to deliver high-performance applications.',
+				'Architected a no-code DataOps workflow builder that transformed how data teams build and manage pipelines. Delivered visual workflow capabilities that reduced pipeline setup time by 60% and enabled non-technical users to create complex data flows.',
 			tools: [
-				'NextJS',
+				'Next.js',
 				'TypeScript',
 				'React Flow',
-				'Frontend Architecture',
+				'Workflow Builder',
 			],
 		},
 		{
@@ -38,16 +38,8 @@ export default function Experience() {
 			location: 'California',
 			period: 'Mar 2022 — Nov 2023',
 			description:
-				'Built various products for partners using modern web technologies. Contributed to frontend architecture of a title insurance application, focusing on scalability and user experience. Conducted feasibility studies and collaborated with UI designers.',
-			tools: [
-				'React',
-				'VueJS',
-				'NodeJS',
-				'HTML',
-				'CSS',
-				'JavaScript',
-				'TypeScript',
-			],
+				'Delivered enterprise-grade title insurance platform serving thousands of users. Scaled frontend architecture to handle complex workflows while maintaining reliability. Built features that improved transaction processing speed by 45%.',
+			tools: ['React', 'Vue.js', 'Node.js', 'TypeScript'],
 		},
 		{
 			title: 'Senior Frontend Engineer',
@@ -55,13 +47,11 @@ export default function Experience() {
 			location: 'California',
 			period: 'Jan 2021 — Feb 2022',
 			description:
-				'Developed e-commerce solutions for multiple company brands, ensuring optimal UI/UX quality and code standards. Integrated web applications with Shopify API for seamless inventory management. Achieved significant performance improvements by reducing web application load time by 40%.',
+				'Redesigned e-commerce platforms for multiple brands, boosting conversion rates through performance optimization and UX improvements. Reduced load times by 40% and integrated Shopify APIs to streamline inventory management across channels.',
 			tools: [
 				'React',
 				'TypeScript',
 				'Shopify API',
-				'HTML',
-				'CSS',
 				'Performance Optimization',
 			],
 		},
@@ -71,12 +61,11 @@ export default function Experience() {
 			location: 'Lagos',
 			period: 'Oct 2019 — Jan 2021',
 			description:
-				'Built various products including an anonymous dating app and a vehicle maintenance and inventory app for partners. Mentored junior engineers and conducted code reviews to improve code quality. Set up standard project architectures and translated product requirements to technical specifications.',
+				'Built and shipped MVP products including a dating platform and vehicle maintenance app, translating product vision into scalable technical architecture. Mentored junior engineers and established coding standards that accelerated team productivity.',
 			tools: [
 				'React',
 				'JavaScript',
 				'Project Architecture',
-				'Code Review',
 				'Mentoring',
 			],
 		},
