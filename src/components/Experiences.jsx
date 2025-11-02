@@ -9,12 +9,11 @@ export default function Experience() {
 			location: 'Remote',
 			period: 'Dec 2024 — Present',
 			description:
-				'Leading frontend architecture for AI-powered applications, building scalable component libraries that enable faster shipping across teams. Mentoring engineers and driving code quality standards that support intelligent product development at scale.',
+				'Built full-stack apps (SocialKit, VoySaude, DealDeploy). Integrated AI for company enrichment and automated outreach. Improved backend efficiency and development speed.',
 			tools: [
 				'React',
 				'Next.js',
 				'TypeScript',
-				'Design Systems',
 				'AI Integration',
 			],
 		},
@@ -24,7 +23,7 @@ export default function Experience() {
 			location: 'London',
 			period: 'May 2024 — Nov 2024',
 			description:
-				'Architected a no-code DataOps workflow builder that transformed how data teams build and manage pipelines. Delivered visual workflow capabilities that reduced pipeline setup time by 60% and enabled non-technical users to create complex data flows.',
+				'Architected the visual DataOps workflow builder with conditional branching and YAML config export. Led design discussions and mentored a junior engineer.',
 			tools: [
 				'Next.js',
 				'TypeScript',
@@ -34,11 +33,11 @@ export default function Experience() {
 		},
 		{
 			title: 'Senior Software Engineer',
-			company: 'Theoremone',
+			company: 'TheoremOne',
 			location: 'California',
 			period: 'Mar 2022 — Nov 2023',
 			description:
-				'Delivered enterprise-grade title insurance platform serving thousands of users. Scaled frontend architecture to handle complex workflows while maintaining reliability. Built features that improved transaction processing speed by 45%.',
+				'Developed large-scale enterprise software for a title insurance company. Led chat and bulk operations features, and guided implementation research.',
 			tools: ['React', 'Vue.js', 'Node.js', 'TypeScript'],
 		},
 		{
@@ -47,12 +46,12 @@ export default function Experience() {
 			location: 'California',
 			period: 'Jan 2021 — Feb 2022',
 			description:
-				'Redesigned e-commerce platforms for multiple brands, boosting conversion rates through performance optimization and UX improvements. Reduced load times by 40% and integrated Shopify APIs to streamline inventory management across channels.',
+				'Improved conversions by 10% through A/B testing (Optimizely), built multi-language support via Crowdin, and developed gift card systems.',
 			tools: [
 				'React',
 				'TypeScript',
-				'Shopify API',
-				'Performance Optimization',
+				'A/B Testing',
+				'Localization',
 			],
 		},
 		{
@@ -61,7 +60,7 @@ export default function Experience() {
 			location: 'Lagos',
 			period: 'Oct 2019 — Jan 2021',
 			description:
-				'Built and shipped MVP products including a dating platform and vehicle maintenance app, translating product vision into scalable technical architecture. Mentored junior engineers and established coding standards that accelerated team productivity.',
+				'Led teams, established coding standards, mentored developers, and translated client goals into scalable technical solutions.',
 			tools: [
 				'React',
 				'JavaScript',
@@ -75,11 +74,12 @@ export default function Experience() {
 		<section
 			id="experience"
 			className="w-full h-full flex flex-col fade-in gap-16 px-4 md:px-12 py-16 md:py-24 relative">
-			<div className="text-center max-w-4xl mx-auto relative z-10">
-				<div className="space-y-6">
-					<H3 className="text-2xl md:text-4xl font-bold mb-4">
+			<div className="text-center max-w-4xl mx-auto relative z-10 mb-8">
+				<div className="space-y-4">
+					<H3 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight">
 						Professional Experience
 					</H3>
+					<div className="w-24 h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent rounded-full mx-auto"></div>
 				</div>
 			</div>
 

@@ -71,17 +71,20 @@ export default function ChatWithMe() {
 			id="chat-with-me"
 			className="w-full h-full flex flex-col fade-in gap-8 md:gap-12 px-4 md:px-12 py-10 md:py-20">
 			<div className="text-center max-w-3xl mx-auto mb-12">
-				<H3 className="text-2xl md:text-4xl font-bold mb-6">
-					Let's Work Together
-				</H3>
-				<Lead className="text-base md:text-lg text-muted-foreground leading-relaxed">
-					Whether you're building an AI-powered product,
-					refining a digital experience, or scaling your
-					engineering systems, I help teams turn ideas into
-					intelligent, reliable, and human-centered
-					software. Let's build something that works
-					beautifully — for both people and the business
-					behind it.
+				<div className="space-y-4 mb-8">
+					<H3 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+						Let's Work Together
+					</H3>
+					<div className="w-24 h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent rounded-full mx-auto"></div>
+				</div>
+				<Lead className="text-base md:text-lg text-muted-foreground leading-relaxed tracking-wide">
+					Whether you're building an AI product, refining a
+					digital experience, or scaling your engineering
+					systems — I can help you bring it to life.
+					<br />
+					<br />I collaborate with teams to design and ship
+					intelligent solutions that create measurable
+					impact.
 				</Lead>
 			</div>
 
@@ -90,48 +93,25 @@ export default function ChatWithMe() {
 					<Card className="text-center hover:bg-transparent hover:translate-y-0">
 						<CardHeader className="justify-center">
 							<CardTitle className="text-xl text-center">
-								AI & Intelligent Systems
-							</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<CardDescription className="text-base leading-relaxed">
-								Building smart, reliable systems that bring
-								modern AI into real products — from
-								conversational tools to document
-								understanding and workflow automation.
-							</CardDescription>
-						</CardContent>
-					</Card>
-
-					<Card className="text-center hover:bg-transparent hover:translate-y-0">
-						<CardHeader className="justify-center">
-							<CardTitle className="text-xl text-center">
 								Product Engineering
 							</CardTitle>
 						</CardHeader>
-						<CardContent>
-							<CardDescription className="text-base leading-relaxed">
-								Full-stack development with React, Node.js,
-								and cloud platforms — focused on
-								performance, scalability, and long-term
-								maintainability.
-							</CardDescription>
-						</CardContent>
 					</Card>
 
 					<Card className="text-center hover:bg-transparent hover:translate-y-0">
 						<CardHeader className="justify-center">
 							<CardTitle className="text-xl text-center">
-								Experience Design
+								AI Systems
 							</CardTitle>
 						</CardHeader>
-						<CardContent>
-							<CardDescription className="text-base leading-relaxed">
-								Creating design systems and user experiences
-								that make complex interactions feel simple,
-								natural, and effective.
-							</CardDescription>
-						</CardContent>
+					</Card>
+
+					<Card className="text-center hover:bg-transparent hover:translate-y-0">
+						<CardHeader className="justify-center">
+							<CardTitle className="text-xl text-center">
+								Technical Strategy
+							</CardTitle>
+						</CardHeader>
 					</Card>
 				</div>
 			</div>

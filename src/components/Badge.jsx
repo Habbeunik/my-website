@@ -17,7 +17,7 @@ const badgeVariants = {
 	warning:
 		'bg-gradient-to-r from-yellow-500 to-orange-500 text-white shadow-lg',
 	info: 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg',
-	tech: 'border border-emerald-500/30 text-emerald-400 bg-emerald-500/10 hover:bg-emerald-500/20 hover:border-emerald-400/50',
+	tech: 'border border-white/30 text-white/80 bg-white/10 hover:bg-white/20 hover:border-white/50',
 };
 
 const badgeSizes = {

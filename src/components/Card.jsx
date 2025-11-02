@@ -13,7 +13,7 @@ const Card = React.forwardRef(
 				<React.Fragment>
 					{React.cloneElement(children, {
 						className: cn(
-							'group block border border-muted-foreground/20 rounded-2xl p-8 hover:bg-muted/10 transition-all duration-300 hover:border-muted-foreground/40 hover:-translate-y-1 h-full relative overflow-hidden',
+							'group block border border-muted-foreground/20 rounded-2xl p-8 hover:bg-muted/10 transition-all duration-300 hover:border-white/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-white/5 h-full relative overflow-hidden',
 							className
 						),
 						ref,
@@ -26,10 +26,10 @@ const Card = React.forwardRef(
 		return (
 			<Comp
 				ref={ref}
-				className={cn(
-					'group block border border-muted-foreground/20 rounded-2xl p-8 hover:bg-muted/10 transition-all duration-300 hover:border-muted-foreground/40 hover:-translate-y-1 h-full relative overflow-hidden',
-					className
-				)}
+						className={cn(
+							'group block border border-muted-foreground/20 rounded-2xl p-8 hover:bg-muted/10 transition-all duration-300 hover:border-white/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-white/5 h-full relative overflow-hidden',
+							className
+						)}
 				{...props}>
 				{children}
 			</Comp>

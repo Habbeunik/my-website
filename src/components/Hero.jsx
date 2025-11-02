@@ -1,10 +1,13 @@
 import { H1, Muted, P } from './Typography';
+import { BlobDecoration } from './DecorativeElements.jsx';
 
 export default function Hero() {
 	return (
 		<div className="w-full h-auto md:min-h-[80vh] flex items-center justify-center px-4 py-16 md:px-12 md:py-32 relative overflow-hidden">
 			<div className="absolute inset-0 pointer-events-none">
 				<div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+				<BlobDecoration className="top-1/4 -left-40 animate-float" />
+				<BlobDecoration className="bottom-1/4 -right-40 animate-float animate-delay-300" />
 				<div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/50"></div>
 			</div>
 
@@ -13,31 +16,27 @@ export default function Hero() {
 					<div className="space-y-8">
 						<div className="relative">
 							<div className="absolute -inset-x-4 -inset-y-4 bg-gradient-to-r from-transparent via-muted-foreground/5 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
-							<H1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground relative bg-clip-text">
+							<H1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground relative bg-clip-text leading-[1.1]">
 								Abbey Kumapayi
 							</H1>
 						</div>
 
 						<div className="flex items-center justify-center gap-3">
 							<span className="px-4 py-1.5 rounded-full border border-muted-foreground/30 bg-background/50 backdrop-blur-sm text-sm md:text-base text-foreground font-medium">
-								Product Engineer
-							</span>
-							<div className="w-1.5 h-1.5 bg-muted-foreground/50 rounded-full"></div>
-							<span className="px-4 py-1.5 rounded-full border border-muted-foreground/30 bg-background/50 backdrop-blur-sm text-sm md:text-base text-foreground font-medium">
-								7+ years experience
+								Senior Full-Stack Product Engineer
 							</span>
 						</div>
 					</div>
 
 					<div className="max-w-3xl mx-auto space-y-6">
-						<P className="text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed font-light">
-							Building intelligent, enduring products where
-							good design meets practical engineering.
+						<P className="text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed font-light tracking-[-0.02em]">
+							I build intelligent, scalable products that
+							connect ideas to impact.
 						</P>
-						<P className="text-base md:text-lg text-muted-foreground leading-relaxed">
-							Focused on turning complex ideas into clear,
-							human-centered experiences powered by modern
-							AI.
+						<P className="text-base md:text-lg text-muted-foreground leading-relaxed tracking-wide">
+							Currently focused on AI-powered and
+							data-driven experiences that help teams move
+							faster and work smarter.
 						</P>
 					</div>
 

@@ -59,11 +59,8 @@ export default function Header() {
 
 					<button
 						onClick={handleDownloadCV}
-						className="btn-modern relative overflow-hidden group">
-						<span className="relative z-10 font-semibold">
-							Download CV
-						</span>
-						<div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						className="group relative bg-foreground text-background px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+						Download CV
 					</button>
 				</nav>
 
@@ -143,10 +140,8 @@ export default function Header() {
 								handleDownloadCV();
 								closeMobileMenu();
 							}}
-							className="w-full btn-modern">
-							<span className="font-semibold">
-								Download CV
-							</span>
+							className="w-full group relative bg-foreground text-background px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+							Download CV
 						</button>
 					</div>
 				</div>

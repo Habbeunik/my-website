@@ -7,6 +7,7 @@ import Hero from '../components/Hero.jsx';
 import About from '../components/Abouts.jsx';
 import Experience from '../components/Experiences.jsx';
 import Projects from '../components/Projects.jsx';
+import Skills from '../components/Skills.jsx';
 import Blog from '../components/Blog.jsx';
 import Fun from '../components/Fun.jsx';
 import Header from '../components/Header.jsx';
@@ -15,7 +16,7 @@ import CustomCursor from '../components/CustomCursor.jsx';
 ---
 
 <Layout
-	title="Abbey Kumapayi - Product-Focused Full-Stack Engineer | Portfolio">
+	title="Abbey Kumapayi - Senior Full-Stack Product Engineer | Building AI-powered, scalable web products">
 	<CustomCursor client:load />
 	<main
 		class="min-h-screen relative flex flex-col max-w-7xl mx-auto">
@@ -102,6 +103,25 @@ import CustomCursor from '../components/CustomCursor.jsx';
 					id="projects"
 					class="animate-fade-in-up animate-delay-300 mobile-section">
 					<Projects />
+				</section>
+			</div>
+			<div
+				class="border-muted-foreground/20 h-full desktop-only">
+			</div>
+		</div>
+
+		<!-- Skills & Tools Section -->
+		<div
+			class="grid grid-cols-[40px_1fr_40px] md:grid-cols-[40px_1fr_40px] mobile-grid">
+			<div
+				class="border-r border-muted-foreground/20 desktop-only">
+			</div>
+			<div
+				class="border-r border-muted-foreground/20 h-full pt-4 md:pt-10">
+				<section
+					id="skills"
+					class="animate-fade-in-up animate-delay-350 mobile-section">
+					<Skills />
 				</section>
 			</div>
 			<div
