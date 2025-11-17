@@ -53,12 +53,6 @@ export default function ChatWithMe() {
 			icon: '💼',
 		},
 		{
-			platform: 'Twitter',
-			handle: '@abbeykumapayi',
-			url: 'https://twitter.com/abbeykumapayi',
-			icon: '🐦',
-		},
-		{
 			platform: 'GitHub',
 			handle: '@abbeykumapayi',
 			url: 'https://github.com/abbeykumapayi',
@@ -80,7 +74,7 @@ export default function ChatWithMe() {
 				<Lead className="text-base md:text-lg text-muted-foreground leading-relaxed tracking-wide">
 					Whether you're building an AI product, refining a
 					digital experience, or scaling your engineering
-					systems — I can help you bring it to life.
+					systems. I can help you bring it to life.
 					<br />
 					<br />I collaborate with teams to design and ship
 					intelligent solutions that create measurable

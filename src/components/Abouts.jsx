@@ -32,16 +32,16 @@ export default function About() {
 					</P>
 					<P className="text-lg md:text-xl leading-8 md:leading-9 text-foreground">
 						I've led full-stack projects across e-commerce,
-						DataOps, and enterprise software — designing
+						DataOps, and enterprise software, designing
 						scalable architecture, mentoring engineers, and
 						integrating AI to make tools more intuitive and
 						efficient.
 					</P>
 					<P className="text-lg md:text-xl leading-8 md:leading-9 text-foreground">
 						Lately, I've been focused on AI-driven
-						applications — from document intelligence to
-						workflow automation — building products that
-						feel as thoughtful as they are powerful.
+						applications, from document intelligence to
+						workflow automation, building products that feel
+						as thoughtful as they are powerful.
 					</P>
 					<P className="text-lg md:text-xl leading-8 md:leading-9 text-foreground">
 						Beyond code, I'm curious about systems, design,
