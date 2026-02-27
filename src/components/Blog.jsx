@@ -5,6 +5,20 @@ export default function Blog() {
 	const publications = [
 		{
 			title:
+				'Cosine Similarity Explained: The Formula Behind Vector Search',
+			description:
+				'Understanding how cosine similarity measures alignment between vectors by computing the cosine of the angle between them, and why this powers modern semantic search systems.',
+			tags: [
+				'Machine Learning',
+				'Mathematics',
+				'Vector Database',
+			],
+			url: 'https://medium.com/@Habbeyunik/cosine-similarity-explained-the-formula-behind-vector-search-c39ae66925db',
+			date: 'Feb 2026',
+			readTime: '5 min read',
+		},
+		{
+			title:
 				'Vector Embeddings Explained: How Machines Understand Meaning',
 			description:
 				'A deep dive into how vector embeddings enable machines to understand and process human language, exploring the mathematical foundations that power modern AI systems.',
